@@ -2,6 +2,12 @@
 
 A modern todo application built with FastAPI and Next.js.
 
+## Live Demo
+
+- Frontend: [https://todo-front-zeta-eight.vercel.app](https://todo-front-zeta-eight.vercel.app)
+- Backend API: [https://disturbing-melisa-abz-1b4e6d85.koyeb.app](https://disturbing-melisa-abz-1b4e6d85.koyeb.app)
+- API Documentation: [https://disturbing-melisa-abz-1b4e6d85.koyeb.app/docs](https://disturbing-melisa-abz-1b4e6d85.koyeb.app/docs)
+
 ## Project Structure
 
 ```
@@ -10,7 +16,7 @@ A modern todo application built with FastAPI and Next.js.
 └── frontend/         # Next.js frontend
 ```
 
-## Backend Setup
+## Backend Setup (Local Development)
 
 1. Create and activate a virtual environment:
 ```bash
@@ -31,7 +37,7 @@ uvicorn app.main:app --reload
 
 The API will be available at http://localhost:8000
 
-## Frontend Setup
+## Frontend Setup (Local Development)
 
 1. Install dependencies:
 ```bash
@@ -55,13 +61,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Tech Stack
 
-### Backend
+### Backend (Deployed on Koyeb)
 - FastAPI
 - SQLAlchemy
 - JWT Authentication
 - Uvicorn
 
-### Frontend
+### Frontend (Deployed on Vercel)
 - Next.js 14
 - TypeScript
 - Tailwind CSS
@@ -70,6 +76,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Development
 
 The application is set up with hot-reloading for both frontend and backend, making development smooth and efficient.
+
+## Deployment
+
+- Backend is deployed on Koyeb
+- Frontend is deployed on Vercel
+- API documentation is available at the backend URL + /docs
 
 ## License
 
