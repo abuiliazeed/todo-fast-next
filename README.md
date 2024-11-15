@@ -1,28 +1,18 @@
-# Todo Application
+# Full Stack Todo Application
 
-A full-stack todo application with FastAPI backend and Next.js frontend.
+A modern todo application built with FastAPI and Next.js.
 
 ## Project Structure
 
 ```
-todo-application/
+.
 ├── backend/           # FastAPI backend
-│   ├── app/
-│   │   └── main.py
-│   ├── requirements.txt
-│   └── README.md
-│
-└── frontend/          # Next.js frontend
-    ├── src/
-    ├── package.json
-    └── README.md
+└── frontend/         # Next.js frontend
 ```
 
-## Backend (FastAPI)
+## Backend Setup
 
-### Setup
-
-1. Create a virtual environment:
+1. Create and activate a virtual environment:
 ```bash
 cd backend
 python -m venv venv
@@ -34,16 +24,14 @@ source venv/bin/activate  # On Windows: .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3. Run the server:
+3. Run the development server:
 ```bash
 uvicorn app.main:app --reload
 ```
 
-The API will be available at `http://localhost:8000`
+The API will be available at http://localhost:8000
 
-## Frontend (Next.js)
-
-### Setup
+## Frontend Setup
 
 1. Install dependencies:
 ```bash
@@ -56,40 +44,33 @@ npm install
 npm run dev
 ```
 
-The application will be available at `http://localhost:3000`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Features
 
-- User authentication with Basic Auth
+- User authentication
 - Create, read, update, and delete todos
-- Mark todos as complete/incomplete
 - Modern, responsive UI
-- API documentation with OpenAPI/Swagger
+- Real-time updates
+
+## Tech Stack
+
+### Backend
+- FastAPI
+- SQLAlchemy
+- JWT Authentication
+- Uvicorn
+
+### Frontend
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Next.js App Router
 
 ## Development
 
-### Backend Development
-
-- API documentation available at `http://localhost:8000/docs`
-- SQLite database for development
-- Basic Auth for authentication
-- CORS enabled for frontend communication
-
-### Frontend Development
-
-- Built with Next.js 14 and TypeScript
-- Tailwind CSS for styling
-- Context API for state management
-- Responsive design
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+The application is set up with hot-reloading for both frontend and backend, making development smooth and efficient.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

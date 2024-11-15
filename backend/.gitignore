@@ -1,0 +1,5 @@
+# Ignore the database file for todos
+todos.db
+
+# Ignore the pycache directory
+__pycache__
